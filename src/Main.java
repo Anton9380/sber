@@ -4,33 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-class City {
-    private String name;
-    private String region;
-    private String district;
-    private long population;
-    private String foundation;
-
-    public City(String name, String region, String district, long population, String foundation) {
-        this.name = name;
-        this.region = region;
-        this.district = district;
-        this.population = population;
-        this.foundation = foundation;
-    }
-
-    @Override
-    public String toString() {
-        return "City{" +
-                "name='" + name + '\'' +
-                ", region='" + region + '\'' +
-                ", district='" + district + '\'' +
-                ", population=" + population +
-                ", foundation='" + foundation + '\'' +
-                '}';
-    }
-}
-
 public class Main {
     public static void main(String[] args) {
         List<City> cities = readCitiesFromFile("cities.txt");
