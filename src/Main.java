@@ -35,7 +35,6 @@ public class Main {
     public static void main(String[] args) {
         List<City> cities = readCitiesFromFile("cities.txt");
 
-        // Выводим список городов в консоль
         for (City city : cities) {
             System.out.println(city);
         }
@@ -50,7 +49,6 @@ public class Main {
                 String line = scanner.nextLine();
                 String[] parts = line.split(";");
 
-                // Проверяем, что количество частей достаточно для создания объекта City
                 if (parts.length == 5) {
                     String name = parts[0].trim();
                     String region = parts[1].trim();
